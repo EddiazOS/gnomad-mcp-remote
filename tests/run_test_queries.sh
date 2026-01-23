@@ -18,4 +18,4 @@ rm -f ${OUTPUT_DIR}/*
 mkdir -p ${OUTPUT_DIR}
 
 echo "Running query runner for version $VERSION..."
-python -m gnomad.query --version "$VERSION" --output-root "$OUTPUT_ROOT"
+uv run python -m gnomad.query --version "$VERSION" --output-root "$OUTPUT_ROOT"
